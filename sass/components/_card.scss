@@ -1,0 +1,101 @@
+.card{
+    max-width: 500px;
+    min-width: 375px;
+    min-height: 25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $white;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    @media screen and (max-width: 375px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1fr;
+        aspect-ratio: 7/10;
+    }
+
+    .card-image{
+        content: '';
+        background-image: url(./images/image-product-desktop.jpg);
+        object-fit: cover !important;
+        background-size: cover !important;
+        background-position: center !important;
+
+        @media (max-width: 375px) {
+            background-image: url(./images/image-product-mobile.jpg);
+            object-fit: contain !important;
+            background-size: cover !important;
+        }
+    }
+
+    .card-content{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1.5rem;
+
+        h5{
+            font-family: 'montserrat';
+            font-weight: 400;
+            color: $dark-greyish-blue;
+        }
+
+        .card-title{
+            font-family: 'fraunces';
+            font-size: 1.5rem;
+            color: $very-dark-blue;
+        }
+
+        .card-description{
+            font-family: 'montserrat';
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .price{
+            display: flex;
+            gap: 1.5rem;
+
+            .new-price{
+                color: $dark-cyan;
+                @media (max-width: 375px) {
+                    font-size: 2rem;
+                }
+            }
+
+            del{
+                font-size: 14px;
+                @media (max-width: 375px) {
+                    font-size: 1rem;
+                }
+            }
+
+
+        }
+
+        .cta-btn{
+            border: none;
+            background-color: $dark-cyan;
+            outline: none;
+            padding: 1rem 1.5rem;
+            border-radius: 0.25rem;
+            color: $white;
+            box-sizing: border-box;
+            transition: background-color .5s ease .1s;
+
+            @media (max-width: 375px) {
+                padding: 1rem;
+                justify-content: flex-start;
+            }
+
+            &:hover{
+                background-color: $dark-greyish-blue;
+            }
+        }
+
+        @media (max-width: 375px) {
+            padding: 1rem;
+            justify-content: flex-start;
+        }
+    }
+}

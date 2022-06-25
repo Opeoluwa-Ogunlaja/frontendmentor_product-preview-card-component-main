@@ -8,4 +8,111 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.card {
+  max-width: 500px;
+  min-width: 375px;
+  min-height: 25em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 375px) {
+  .card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 1fr;
+    aspect-ratio: 7/10;
+  }
+}
+.card .card-image {
+  content: "";
+  background-image: url(./images/image-product-desktop.jpg);
+  object-fit: cover !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+@media (max-width: 375px) {
+  .card .card-image {
+    background-image: url(./images/image-product-mobile.jpg);
+    object-fit: contain !important;
+    background-size: cover !important;
+  }
+}
+.card .card-content {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+.card .card-content h5 {
+  font-family: "montserrat";
+  font-weight: 400;
+  color: hsl(228deg, 12%, 48%);
+}
+.card .card-content .card-title {
+  font-family: "fraunces";
+  font-size: 1.5rem;
+  color: hsl(212deg, 21%, 14%);
+}
+.card .card-content .card-description {
+  font-family: "montserrat";
+  font-weight: 500;
+  font-size: 14px;
+}
+.card .card-content .price {
+  display: flex;
+  gap: 1.5rem;
+}
+.card .card-content .price .new-price {
+  color: hsl(158deg, 36%, 37%);
+}
+@media (max-width: 375px) {
+  .card .card-content .price .new-price {
+    font-size: 2rem;
+  }
+}
+.card .card-content .price del {
+  font-size: 14px;
+}
+@media (max-width: 375px) {
+  .card .card-content .price del {
+    font-size: 1rem;
+  }
+}
+.card .card-content .cta-btn {
+  border: none;
+  background-color: hsl(158deg, 36%, 37%);
+  outline: none;
+  padding: 1rem 1.5rem;
+  border-radius: 0.25rem;
+  color: hsl(0deg, 0%, 100%);
+  box-sizing: border-box;
+  transition: background-color 0.5s ease 0.1s;
+}
+@media (max-width: 375px) {
+  .card .card-content .cta-btn {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+}
+.card .card-content .cta-btn:hover {
+  background-color: hsl(228deg, 12%, 48%);
+}
+@media (max-width: 375px) {
+  .card .card-content {
+    padding: 1rem;
+    justify-content: flex-start;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
