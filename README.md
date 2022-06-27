@@ -1,5 +1,7 @@
 # Frontend Mentor - Product preview card component
 
+View my try [here](https://opeoluwa-ogunlaja.github.io/frontendmentor_product-preview-card-component-main) 😁
+
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
 
 ## Welcome! 👋
