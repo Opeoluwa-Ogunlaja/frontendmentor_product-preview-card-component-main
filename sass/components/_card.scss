@@ -51,6 +51,7 @@
             font-family: 'montserrat';
             font-weight: 500;
             font-size: 14px;
+            color: $dark-greyish-blue;
         }
         .price{
             display: flex;
@@ -65,6 +66,7 @@
 
             del{
                 font-size: 14px;
+                color: $dark-greyish-blue;
                 @media (max-width: 375px) {
                     font-size: 1rem;
                 }

@@ -68,6 +68,7 @@ body {
   font-family: "montserrat";
   font-weight: 500;
   font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
 }
 .card .card-content .price {
   display: flex;
@@ -83,6 +84,7 @@ body {
 }
 .card .card-content .price del {
   font-size: 14px;
+  color: hsl(228deg, 12%, 48%);
 }
 @media (max-width: 375px) {
   .card .card-content .price del {
