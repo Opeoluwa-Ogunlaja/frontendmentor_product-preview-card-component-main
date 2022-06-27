@@ -1,0 +1,19 @@
+{
+  "name": "frontend_product-preview-card-overview_opeoluwa-ogunlaja",
+  "version": "1.0.0",
+  "description": "My card",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Opeoluwa-Ogunlaja/frontendmentor_product-preview-card-component-main.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Opeoluwa-Ogunlaja/frontendmentor_product-preview-card-component-main/issues"
+  },
+  "homepage": "https://github.com/Opeoluwa-Ogunlaja/frontendmentor_product-preview-card-component-main#readme"
+}
